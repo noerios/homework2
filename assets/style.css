@@ -126,6 +126,7 @@
   /* footer elements */
   .footer {
       background-color: #555555;
+      width: 100%;
   }
   
   /* flex direction */
