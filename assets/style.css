@@ -1,256 +1,138 @@
-
-/*page elements*/
-
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    background-color: #fbf7f0;
-}
-/* navigate the page */
-
-nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: serif;
-    font-size: 20px;
-    display: flex;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-/*mouse over nav links*/
-
-li a:hover {
-    color: #d9e4dd;
-}
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-p {
-    font-size: 16px;
-}
-
-
-/*page header with unique character design*/
-header {
-    padding: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #555555;
-    color: #ffffff;
-}
-
-header h1 {
-    display: inline-block;
-    font-size: 48px;
-}
-
-header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-}
-
-header div ul {
-    list-style-type: none;
-}
-
-header div ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-/*remaining header elements*/
-
-h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-h4 {
-    font-size: 20px;
-}
-
-/*hero banner image*/
-
-#hero-image {
-    background-image: url("images/web-development.jpg");
-    height: 200px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-size: cover;
-    background-position: center;
-}
-
-/*main body section styling*/
-
-main {
-    width: 75%;
-    display: flex;
-    margin-left: 20px;
-}
-
-.work1 {
-    margin-bottom: 20px;
-    border-radius: 10px;
-    margin-right: 10px;
-    padding: 25px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #555555;
-    color: #fbf7f0;
-    
-}
-
-.work1 img {
-    max-height: 200px;
-}
-
-
-.card{
-    width: 49%; 
-    height: 300px;
-    padding: 25px; 
-    margin-right: 10px; 
-    margin-bottom: 0px;
-    border-radius: 10px;
-    align-items: center;
-    float:left; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #fbf7f0;
-    color: #555555;
-    border-style: solid;
-    border-color: #555555;
-}
-
-.work2 img {
-    max-height: 200px;
-}
-
-.imgSize{
+  }
   
-    max-height: 250px;
-}
-.work3 {
-    margin-bottom: 20px;
-    border-radius: 10px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #555555;
-    color: #fbf7f0;
-}
-
-.work3 img {
-    max-height: 200px;
-}
-
-.float-left {
-    float: left;
-    margin-right: 15px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 15px;
-}
-
-
-/*sidebar structure*/
-
-aside {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #fbf7f0;
-    margin-block-end: 20px;
-    border-left: 2px solid #555555;
-}
-
-.about-me {
-    margin-bottom: 32px;
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  header {
+    padding: 40px;
+    text-align: left;
     color: #555555;
-}
-
-.about-me img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.skills-section {
-    margin-bottom: 32px;
-    color: #555555;
-}
-
-.skills-section ul {
-    justify-content: center;
-    margin: 10px auto;
-    margin-left: 20px;
-}
-
-.contact-me {
-    margin-bottom: 32px;
-    color: #555555;
-}
-
-.contact-me ul {
-    justify-content: center;
-}
-
-/* this footer tho */
-
-
-.footer {
-    padding: 1rem;
-    background: #555555;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    background-color: #d9e4dd;
+  }
+  
+  h2 {
+      font-size: 20px;
+  }
+  
+  /* Nav Bar styling*/
+  nav {
     display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    clear: both;
+    background-color: #fbf7f0;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d9e4dd;
+  }
+  
+  nav a {
+    color: #555555;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  /* main work section styling */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  p {
+      color: #555555
+  }
+  
+  section {
+    flex: 1;
+    background-color: #fbf7f0;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  .products div {
+      height: 40px;
+      align-content: center;
+      justify-content: center;
+  }
+  
+  /* feature cards section */
+  .products {
+    flex: 4;
+    background-color: #fbf7f0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .products img {
+      width: 400px;
+      height: 265px;
+  }
+  
+  /* feature cards styling */
+  .card {
+    padding: 10px;
+    flex: 0 0 450px;
+    color: #555555;
+  }
+  
+  .card header {
     padding: 20px;
   }
   
-/*responsive design for screen sizes*/
-
-@media screen and (max-width: 768px) {
-    /* flex-direction to stack the navbar, sidebar, and body */
-    main, 
-    nav {
-        flex-direction: column;
-}
-
-}
+  .card p {
+    text-align: center;
+  }
   
+  .card img {
+    width: 100%;
+  }
+  
+  /*side bar with about, tools, and contact*/
+  
+  aside {
+    flex: 1;
+    background-color: #fbf7f0;
+    padding: 80px;
+    text-align: center;
+    max-width: 300px;
+    color: #55555525;
+  }
+  
+  aside img {
+      align-self: center;
+  }
+  
+  aside h2 {
+      color: #555555;
+  }
+  
+  aside a {
+      color: #555555
+  }
+  
+  ul.no-bullets {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      color: #555555;
+  }
+  
+  
+  /* footer elements */
+  .footer {
+      background-color: #555555;
+  }
+  
+  /* flex direction */
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
   

@@ -1,117 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Rios</title>
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
-    <!--Header with nav bar-->
+<html>
+  <head>
+    <title>Responsive Web Design</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
     <header>
-        <h1>Portfolio: Rios</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#work1">About Me</a>
-                </li>
-                <li>
-                    <a href="#work1">Work</a>
-                </li>
-                <li>
-                    <a href="http://noe-rios.squarespace.com/resume" target="_blank">Resume</a>
-                </li>
-            </ul>
-        </nav>
+      <h1>Portfolio: Rios</h1>
     </header>
 
-<!--hero banner image-->
-<div id="hero-image"></div>
+    <!-- Navbar -->
+    <nav>
+      <a href="#">About Me</a>
+      <a href="http://noe-rios.squarespace.com/resume" target="_blank">Resume</a>
+    </nav>
 
-
-<!--main body elements-->
-<main>
-    <div id="work1" class="work1">
-        <a href="https://noerios.github.io/homework1/">
-        <img src="assets/images/work1.png" alt="horiseon webpage screenshot" class="float-left" />
-        </a>
-        <h2>SEO Assignment</h2>
-        <p>
-            For this assignment, I was tasked with bringing Horiseon SEO's website up to accessibility standards. I was given an html file and style sheet with broken images, links, and redundancines in both coding eleemnts. I updated the HTML and CSS elements to follo semantic structure, organized sequencing of heading attributes, corrected broken links, and deployed via GitHub.
-        </p>
-    </div>
-
-    <div style="height:20rem; width:100%; margin: auto;">
-        <div class="card">
-                
-        <h2>Portfolio Assignment</h2>
-        <p>
-            For this assignment I was tasked with building a portfolio from scratch. You're looking at it. 
-        </p>
-        </div>
-        <div class="card">
-            <img class="imgSize" src="assets/images/porftolio.screenshot.png" alt="portfolio screenshot b"  />
-        </div>
-        
-        
-
+    <!-- Body -->
+    <main>
+      
+      <!-- Feature Cards -->
+      <div class="products">
+        <section class="card">
+          <div><h2>Horiseon SEO</h2></div>
+          <a href="https://noerios.github.io/homework1/">
+          <img src="assets/images/02-advanced-css-homework-demo.gif" alt="Horiseon SEO Site Gif" />
+            </a>
+          <p>HTML - CSS - SEO</p>
+        </section>
+        <section class="card">
+          <div><h2>Sample Project 1</h2></div>
+          <img src="assets/images/portfoliosampleimage1.png" alt="tablet held in hands" />
+          <p>HTML - CSS - JavaScript</p>
+        </section>
+        <section class="card">
+          <div><h2>Sample Project 2</h2></div>
+          <img
+            src="assets/images/portfoliosampleimage2.png"
+            alt="rolls of toilet paper in a basket"
+          />
+          <p>HTML - CSS - Bootstrap</p>
+        </section>
+        <section class="card">
+          <div><h2>Sample Project 3</h2></div>
+          <img
+            src="assets/images/portfoliosampleimage3.png"
+            alt="4 wooden spoons with different seasonings"
+          />
+          <p>JavaScript</p>
+        </section>
       </div>
-      <div style="height:20rem; width:100%; margin: auto;">
-        <div class="card">
+
+
+      <!-- Sidebar -->
+        <aside>
+            <img src="assets/images/headshot2 copy.jpg" alt="Noe Rios Headshot"/>
+            <h2>Noe Rios</h2>
+                <p>I'm a full stack developer with 10 years experience in marketing products to consumers. 
+                </p>
+                <p>I've focused my career in the digital space, and have recently pivoted to building beautiful and effective web applications for clients of all types.
+                </p>
+
+            <h2>Skills</h2>
+                <ul class="no-bullets">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Responsive Design</li>
+                    <li>GitHub</li>
+                </ul>
                 
-        <h2>Portfolio Assignment</h2>
-        <p>
-            For this assignment I was tasked with building a portfolio from scratch. You're looking at it. 
-        </p>
-        </div>
-        <div class="card">
-            <img class="imgSize" src="assets/images/porftolio.screenshot.png" alt="portfolio screenshot b"  />
-        </div>
+            <h2>Contact</h2>
+            <ul class="no-bullets">
+                <li>512.417.3703</li>
+                <li>noerios@gmail.com</li>
+                <a href="https://www.linkedin.com/in/rnoerios/">LinkedIn</a>
+            </ul>
+                
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <div class="footer">
+      <h3>
         
-        
-
-      </div>
- 
-
-</main>
-<!--aside "about me" and "contact" elements-->
-
-<aside>
-    <div class="about-me">
-        <h3>About Me</h3>
-        <img src="assets/images/headshot2 copy.jpg" alt="noe rios headshot"/>
-        <p>
-            I'm a full stack developer with 10 years experience in marketing products to consumers. I've focused my career in the digital space, and have recently pivoted to building beautiful and effective web applications for clients of all types.
-        </p>
+      </h3>
     </div>
-    <div class="skills-section">
-        <h3>Skills</h3>
-        <img src="" />
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Responsive Design</li>
-            <li>Github Pages</li>
-        </ul>
-    </div>
-    <div class="contact-me">
-        <h3>Contact Me</h3>
-        <img src=""></img>
-        <p>
-            <p>p: 512.417.3703</p>
-            <p>e: noerios@gmail.com</p>
-            <a href="https://www.linkedin.com/in/rnoerios/">LinkedIn</a>
-        </p>
-    </div>
-</aside>    
-<footer class="footer">
-    <div class="footer-left">
-      <a href="#"><img class="logo" src="assets/images/footer.logo.png"></a>
-    </div>
-    
-  </footer>
-  
-  
-</body>
+  </body>
 </html>
